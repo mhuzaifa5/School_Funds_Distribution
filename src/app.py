@@ -55,7 +55,7 @@ with st.expander("**1. DATA CLEANING**"):
     st.write('''If you want to know how the cleaning process is done , take a look on my code by clicking above on github icon and visiting github ....
     ''')
     # loading the provided schools data
-    init_df = pd.read_csv(r"https://github.com/mhuzaifa5/School_Funds_Distribution/blob/main/data/Input_Schools_Data.csv")
+    init_df = pd.read_csv(r"data/Input_Schools_Data.csv")
     df=clean_data(init_df)
 
 
