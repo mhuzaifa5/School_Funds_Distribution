@@ -42,7 +42,8 @@ Allocated funds to schools in the **Output_Schools_Data.csv**
 
 **Installation:**
 
-Clone this repository: git clone https://<your_github_repo_url>
+Clone this repository: git clone https://github.com/mhuzaifa5/School_Funds_Distribution.git
+
 Install dependencies: pip install -r requirements.txt 
 
 **Running the App:**
