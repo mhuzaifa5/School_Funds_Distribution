@@ -2,7 +2,7 @@ Project Title: **Funds Distribution Project - Optimizing Education Impact**
 
 **Demo:**
 
-A live demo of the app is available at (provide a link if applicable).
+A live demo of the app is available at https://schoolfundsdistribution.streamlit.app/.
 
 **Description :**
 
