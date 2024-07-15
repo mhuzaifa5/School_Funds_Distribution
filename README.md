@@ -51,5 +51,6 @@ Install dependencies: pip install -r requirements.txt
 Navigate to the project directory: cd School_funds_distribution
 Run the Streamlit app: streamlit run app.py
 
-
+**Future Improvements:**
+The app is a little slow due to dense calculation in each iteration . So the main task is to make it as fast as possible.
 
