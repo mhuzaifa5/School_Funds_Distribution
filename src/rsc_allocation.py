@@ -76,19 +76,24 @@ def funds_details(new):
         
     col1, col2, col3 = st.columns(3)  # Create three columns
     
-    col1.write(f"Base Fund :{base_fund}")
-    col2.write(f"Enrollment Fund :{enrollment_alloc}")
-    col3.write(f"Teacher Fund Portion :{teacher_alloc}")
+    col1.write(f"Base Fund : {base_fund:.1f}")
+    col2.write(f"Enrollment Fund : {enrollment_alloc:.1f}")
+    col3.write(f"Teacher Fund Portion : {teacher_alloc:.1f}")
     
     col1, col2, col3 = st.columns(3)  
-    col1.write(f"Non Teachers Fund Portion :{non_teacher_alloc}")
-    col2.write(f"Resources Lackness Fund : {resources_alloc}")
-    col3.write(f"Dual Gender School Fund :{dual_gender}")
-    col1, col2,col3 = st.columns(3)  
-    col2.write(f"Building Old Age Fund(>50) :{bldg_age_alloc}")
-    col1.write(f"Building Renovation Fund :{bldg_alloc}") 
-    col3.write(f"Class Resources Fund :{class_fnl_alloc}")
+    col1.write(f"Non Teachers Fund Portion : {non_teacher_alloc:.1f}")
+    col2.write(f"Resources Lackness Fund : {resources_alloc:.1f}")
+    col3.write(f"Dual Gender School Fund : {dual_gender:.1f}")
 
-    total= base_fund + enrollment_alloc + teacher_alloc + non_teacher_alloc + bldg_age_alloc + bldg_alloc + classes_alloc + resources_alloc + dual_gender
-    # return total
-    st.write("Total Fund :",total)
+    col1, col2, col3 = st.columns(3)  
+    col2.write(f"Building Old Age Fund(>50) : {bldg_age_alloc:.1f}")
+    col1.write(f"Building Renovation Fund : {bldg_alloc:.1f}") 
+    col3.write(f"Class Resources Fund : {class_fnl_alloc:.1f}")
+    
+    # Calculating the total
+    total = base_fund + enrollment_alloc + teacher_alloc + non_teacher_alloc + bldg_age_alloc + bldg_alloc + classes_alloc + resources_alloc + dual_gender
+    # Display the total with 1 decimal place
+    st.write(f"Total Fund : {total:.1f}")
+
+    
+    
